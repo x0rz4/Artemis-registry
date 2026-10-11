@@ -1,0 +1,11 @@
+{
+  "release": "v1.0.0",
+  "tools": {
+    "url": "https://github.com/x0rz4/Artemis-registry/releases/download/v1.0.0/tools.json",
+    "sha256": "2253094d69e4d2c0b847f88e7334d55198478f7cd297b10317dd371ace3d2748"
+  },
+  "skills": {
+    "url": "https://github.com/x0rz4/Artemis-registry/releases/download/v1.0.0/skills.json",
+    "sha256": "8d8314e8b9bc854c5ce054279ba31a5ffe35462b6afcd20898352629e1ec06bc"
+  }
+}
