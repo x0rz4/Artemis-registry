@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "tools": [
+    {
+      "name": "httpx",
+      "version": "1.12.0",
+      "purpose": "HTTP 探活与标题识别",
+      "upstream": "https://github.com/projectdiscovery/httpx",
+      "release": "https://github.com/projectdiscovery/httpx/releases/tag/v1.12.0",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/projectdiscovery/httpx/releases/download/v1.12.0/httpx_1.12.0_linux_amd64.zip",
+          "sha256": "9d8439e8b6c9aa7d1e2314817a392e00d5178da3af5652f7475f88868f418f76",
+          "format": "zip",
+          "member": "httpx",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/projectdiscovery/httpx/releases/download/v1.12.0/httpx_1.12.0_linux_arm64.zip",
+          "sha256": "fd7b123c1dfbc3d69f19f524e4eebcd6ec06b9a6cbd56813c76f11645197331e",
+          "format": "zip",
+          "member": "httpx",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/httpx-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/projectdiscovery/httpx/v1.12.0/LICENSE.md",
+      "license_sha256": "cbcdaab87df3175107aa28915bd253cebdd618a49c9ac5d6c669c0b1cbebcacb"
+    },
+    {
+      "name": "naabu",
+      "version": "2.6.1",
+      "purpose": "端口探测",
+      "upstream": "https://github.com/projectdiscovery/naabu",
+      "release": "https://github.com/projectdiscovery/naabu/releases/tag/v2.6.1",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_linux_amd64.zip",
+          "sha256": "018c4c9884dea971eda860435ede3021d1150732f34cfd245498c6726d8cab90",
+          "format": "zip",
+          "member": "naabu",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_linux_arm64.zip",
+          "sha256": "3adc2bb2395c3efff89623499b20eea66ef54924c485d3ae86762393a31736ea",
+          "format": "zip",
+          "member": "naabu",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/naabu-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/projectdiscovery/naabu/v2.6.1/LICENSE.md",
+      "license_sha256": "cbcdaab87df3175107aa28915bd253cebdd618a49c9ac5d6c669c0b1cbebcacb"
+    },
+    {
+      "name": "subfinder",
+      "version": "2.17.0",
+      "purpose": "子域名发现",
+      "upstream": "https://github.com/projectdiscovery/subfinder",
+      "release": "https://github.com/projectdiscovery/subfinder/releases/tag/v2.17.0",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.17.0/subfinder_2.17.0_linux_amd64.zip",
+          "sha256": "a39c3e5c7a26ef3c430915c4d6cbf7716a00f26769a75e9405aba796142eba37",
+          "format": "zip",
+          "member": "subfinder",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.17.0/subfinder_2.17.0_linux_arm64.zip",
+          "sha256": "24913d49dddc1d3a5e99a4a7580da5be980959b9415b96f52c4f7f4124392190",
+          "format": "zip",
+          "member": "subfinder",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/subfinder-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/projectdiscovery/subfinder/v2.17.0/LICENSE.md",
+      "license_sha256": "cbcdaab87df3175107aa28915bd253cebdd618a49c9ac5d6c669c0b1cbebcacb"
+    },
+    {
+      "name": "katana",
+      "version": "1.8.0",
+      "purpose": "Web 爬取与端点发现",
+      "upstream": "https://github.com/projectdiscovery/katana",
+      "release": "https://github.com/projectdiscovery/katana/releases/tag/v1.8.0",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/projectdiscovery/katana/releases/download/v1.8.0/katana_1.8.0_linux_amd64.zip",
+          "sha256": "cb027ae99d0757061b70c07a15c7a80f62c5a535ab52c4a329f80c4b0a7309d2",
+          "format": "zip",
+          "member": "katana",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/projectdiscovery/katana/releases/download/v1.8.0/katana_1.8.0_linux_arm64.zip",
+          "sha256": "80e269210727a855511ffac8dfb01297b2344742acec71a35e8ba4a67a90f0f2",
+          "format": "zip",
+          "member": "katana",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/katana-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/projectdiscovery/katana/v1.8.0/LICENSE.md",
+      "license_sha256": "49982116f64385bdf8582a379e591a19d6040dec22e50e29dc311596d357af23"
+    },
+    {
+      "name": "ffuf",
+      "version": "2.3.0",
+      "purpose": "Web 模糊测试",
+      "upstream": "https://github.com/ffuf/ffuf",
+      "release": "https://github.com/ffuf/ffuf/releases/tag/v2.3.0",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_amd64.tar.gz",
+          "sha256": "b2a3c725fcb9da175159682f54d6e9149f2905b00d84d155e7efc5d599975ceb",
+          "format": "tar.gz",
+          "member": "ffuf",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_arm64.tar.gz",
+          "sha256": "e2d712615d53da797ee929006e41f2df5a7960a5353133db9c150ddaa22ae4e8",
+          "format": "tar.gz",
+          "member": "ffuf",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/ffuf-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/ffuf/ffuf/v2.3.0/LICENSE",
+      "license_sha256": "27efda573d21acd87c68e008a190c7456bcd93b510b8c35a1500088249d5d930"
+    },
+    {
+      "name": "nuclei",
+      "version": "3.11.1",
+      "purpose": "模板化检测（模板另行配置）",
+      "upstream": "https://github.com/projectdiscovery/nuclei",
+      "release": "https://github.com/projectdiscovery/nuclei/releases/tag/v3.11.1",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_amd64.zip",
+          "sha256": "ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6",
+          "format": "zip",
+          "member": "nuclei",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_arm64.zip",
+          "sha256": "8044e3d9768ba0a744b2872c1a87e813006f013da97ca9f50f7661a4203bec07",
+          "format": "zip",
+          "member": "nuclei",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/nuclei-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/projectdiscovery/nuclei/v3.11.1/LICENSE.md",
+      "license_sha256": "5fa6644d2dd1987a79c06f4af210d2cf8cfc4ee799999029d0f9980c9cf95a2c"
+    },
+    {
+      "name": "fscan",
+      "version": "2.2.2",
+      "purpose": "内网综合扫描",
+      "upstream": "https://github.com/shadow1ng/fscan",
+      "release": "https://github.com/shadow1ng/fscan/releases/tag/v2.2.2",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/shadow1ng/fscan/releases/download/v2.2.2/fscan_2.2.2_linux_x64",
+          "sha256": "e5c645434b4fb3b9bfa8d7402e2e6e80189c9ec9533ebdc8620aaace686cd84c",
+          "format": "binary",
+          "member": "fscan",
+          "digest_source": "GitHub release asset digest"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/shadow1ng/fscan/releases/download/v2.2.2/fscan_2.2.2_linux_arm64",
+          "sha256": "cfa5a78adc0b310811af11c0b9bdaaeda0d8443d271ad2c0b28b8b52064eb9fe",
+          "format": "binary",
+          "member": "fscan",
+          "digest_source": "GitHub release asset digest"
+        }
+      },
+      "license": "MIT",
+      "license_file": "licenses/fscan-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/shadow1ng/fscan/v2.2.2/LICENSE.txt",
+      "license_sha256": "9e9a6cba6e93bb83c334d47b92861615b5be438e1076644ff64e7b0f35100379"
+    },
+    {
+      "name": "kscan",
+      "version": "1.85",
+      "purpose": "协议与服务指纹识别",
+      "upstream": "https://github.com/lcvvvv/kscan",
+      "release": "https://github.com/lcvvvv/kscan/releases/tag/v1.85",
+      "assets": {
+        "linux/amd64": {
+          "url": "https://github.com/lcvvvv/kscan/releases/download/v1.85/kscan_linux_amd64.zip",
+          "sha256": "0ceab5ce3238bcddd48c79d57f45f3a18b0f19ad7961d93d7474edf331e6d086",
+          "format": "zip",
+          "member": "kscan_linux_amd64",
+          "digest_source": "computed from fixed release download"
+        }
+      },
+      "license": "GPL-3.0-only",
+      "license_file": "licenses/kscan-LICENSE",
+      "changes": "首批固定版本，统一 ZIP 分发。",
+      "license_url": "https://raw.githubusercontent.com/lcvvvv/kscan/v1.85/LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source_archive": {
+        "url": "https://codeload.github.com/lcvvvv/kscan/tar.gz/refs/tags/v1.85",
+        "sha256": "cc1c8de21a2bb756a3601a6249a629355deb536059179f977c27799639b59198",
+        "filename": "kscan-1.85-source.tar.gz"
+      }
+    }
+  ]
+}

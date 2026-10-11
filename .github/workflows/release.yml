@@ -1,0 +1,83 @@
+name: registry
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: registry-release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test package validation
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Build locked release packages
+        env:
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          version=v0.0.0
+          if [[ "$REF_TYPE" == tag ]]; then version="$REF_NAME"; fi
+          python scripts/build_registry.py --release "$version" --output dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: registry-packages
+          path: dist/
+          retention-days: 7
+          if-no-files-found: error
+
+  smoke:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-24.04
+            platform: linux/amd64
+          - runner: ubuntu-24.04-arm
+            platform: linux/arm64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: registry-packages
+          path: dist
+      - name: Install runtime library
+        run: sudo apt-get update && sudo apt-get install -y libpcap0.8
+      - name: Check executable architecture and help/version only
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: python3 scripts/build_registry.py --output dist --smoke "$PLATFORM"
+
+  publish:
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    needs: [build, smoke]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: registry-packages
+          path: dist
+      - name: Publish and verify before advancing stable
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE: ${{ github.ref_name }}
+        run: python3 scripts/publish_registry.py "$RELEASE"

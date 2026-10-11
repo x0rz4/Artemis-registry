@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "name": "api-recon",
+      "version": "1.0.0",
+      "license": "AGPL-3.0-only",
+      "description": "前端 API 接口侦察",
+      "changes": "首批独立发布。",
+      "license_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "name": "playwright-cli",
+      "version": "1.0.0",
+      "license": "Apache-2.0",
+      "description": "Playwright 浏览器自动化",
+      "changes": "首批独立发布。",
+      "license_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+    },
+    {
+      "name": "scopesentry",
+      "version": "1.0.0",
+      "license": "AGPL-3.0-only",
+      "description": "ScopeSentry MCP 管理指南",
+      "changes": "首批独立发布。修复 SKILL.md 元数据格式。",
+      "license_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    }
+  ]
+}
